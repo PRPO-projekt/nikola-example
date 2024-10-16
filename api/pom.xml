@@ -121,6 +121,11 @@
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
+            <groupId>io.swagger.codegen.v3</groupId>
+            <artifactId>swagger-codegen-generators</artifactId>
+            <version>${swagger_codegen_version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test</artifactId>
             <version>${kotlin.version}</version>
@@ -132,7 +137,7 @@
         <testSourceDirectory>src/test/kotlin</testSourceDirectory>
         <resources>
             <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
+                <directory>../resources</directory>
             </resource>
         </resources>
 
