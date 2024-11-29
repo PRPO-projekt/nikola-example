@@ -6,6 +6,7 @@ import io.ktor.server.application.*
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
 import io.ktor.server.plugins.statuspages.*
+import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.webjars.*
@@ -41,8 +42,8 @@ fun Application.configureRouting() {
         get("/webjars") {
             call.respondText("<script src='/webjars/jquery/jquery.js'></script>", ContentType.Text.Html)
         }
-        get("/test") {
-            call.respondText("test")
+        post("/stops") {
+
         }
     }
 }
